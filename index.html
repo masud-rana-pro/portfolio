@@ -1,231 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Md. Masud Rana - Entry-Level Java, Spring Boot, Mobile App and AI-Assisted Developer." />
-  <meta name="keywords" content="Md. Masud Rana, Java Developer, Spring Boot Developer, Flutter Developer, Android Developer, AI-assisted development, Portfolio" />
-  <meta name="author" content="Md. Masud Rana" />
-  <title>Md. Masud Rana | Java, Spring Boot & Mobile App Developer</title>
-  <link rel="icon" type="image/jpeg" href="assets/img/profile-square.jpg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Md. Masud Rana — Full Stack, Android and Cross-Platform Developer specializing in Java, Spring Boot, Angular and Flutter.">
+  <meta name="theme-color" content="#07111f">
+  <title>Md. Masud Rana | Full Stack & Mobile Developer</title>
+  <link rel="icon" href="assets/img/masud-rana.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body style="background-color: rgba(221, 211, 193, 0.574);">
-  <header class="site-header" id="top" style="color: rgb(0, 202, 91);">
-    <nav class="navbar container">
-      <a class="brand" href="#top">Md. Masud Rana</a>
-      <button class="nav-toggle" type="button" aria-label="Open menu">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Md. Masud Rana home"><span>MR</span><strong>Masud Rana</strong></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <div class="nav-links" id="nav-menu">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Journey</a><a href="#projects">Projects</a><a href="#certifications">Credentials</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="assets/cv/Md_Masud_Rana_CV_Updated_Final.docx" download>Download CV</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section-pad">
+  <main id="main">
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
       <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="eyebrow">Entry-Level Developer • AI-Assisted Development</span>
-          <h1>Java, Spring Boot & Mobile App Developer</h1>
-          <p class="lead">
-            I build reliable web and mobile applications using Java, Spring Boot, Angular, Android, Flutter, databases, and AI-assisted development workflows.
-          </p>
+        <div class="hero-copy reveal">
+          <div class="availability"><i></i> Open to junior developer opportunities</div>
+          <p class="overline">Full Stack · Android · Cross-Platform</p>
+          <h1>I build software that turns <em>ideas into impact.</em></h1>
+          <p class="hero-lead">Java and Spring Boot developer with hands-on experience in enterprise web systems, Android applications and Flutter products—powered by a strong foundation in Statistics and AI-assisted development.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn ghost" href="assets/cv/Md_Masud_Rana_CV.docx" download>Download CV</a>
+            <a class="button primary" href="#projects">Explore my work <span>↗</span></a>
+            <a class="button secondary" href="#contact">Let’s connect</a>
           </div>
-          <div class="quick-info" aria-label="Quick information">
-            <span>Bangladesh</span>
-            <span>BSc & MSc in Statistics</span>
-            <span>IsDB-BISEW Trainee</span>
+          <div class="social-row">
+            <a href="https://github.com/masud-rana-pro" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/masudmwp" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <span>Dhaka, Bangladesh</span>
           </div>
         </div>
-        <div class="hero-card">
-          <img src="assets/img/profile.jpg" alt="Portrait of Md. Masud Rana" />
-          <div class="profile-badge">
-            <strong>Open to Junior Developer Roles</strong>
-            <span>Spring Boot • Flutter • Android • AI Tools</span>
+        <div class="portrait-wrap reveal">
+          <div class="portrait-frame"><img src="assets/img/masud-rana.jpg" alt="Md. Masud Rana" width="800" height="1066"></div>
+          <div class="floating-card code-card"><span>Primary stack</span><strong>Java · Spring Boot</strong></div>
+          <div class="floating-card stats-card"><strong>788</strong><span>training hours</span></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span>Scroll to discover</a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="section-title reveal"><p class="eyebrow">01 / About</p><h2>Analytical thinking meets <span>practical engineering.</span></h2></div>
+        <div class="about-copy reveal">
+          <p class="large-copy">I’m an entry-level software developer focused on building reliable, user-centered web and mobile products.</p>
+          <p>My Statistics background helps me approach problems with clarity and evidence. My professional software training gives me the tools to turn that thinking into clean APIs, responsive interfaces, scalable architecture and well-documented solutions.</p>
+          <div class="about-facts">
+            <div><strong>10.5</strong><span>months intensive training</span></div>
+            <div><strong>22</strong><span>modules in banking project</span></div>
+            <div><strong>6+</strong><span>professional credentials</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad soft-bg" id="about">
-      <div class="container two-col">
-        <div>
-          <span class="section-kicker">About me</span>
-          <h2>Developer with statistics, research and software training background.</h2>
-        </div>
-        <div class="content-card">
-          <p>
-            I am an entry-level software developer trained in Spring Boot, Angular, Android, Flutter, Oracle 19c, Java OOP, REST API and reporting. My academic background in Statistics helps me understand data-driven problems, research methods and analytical decision-making.
-          </p>
-          <p>
-            I have practical exposure to AI-assisted software development using Claude, Cursor Agent, Codex, Gemini, local AI agents, prompt templates, repository context, code generation, refactoring, debugging, testing and documentation workflows.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="skills">
+    <section class="section skills" id="skills">
       <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">Technical skills</span>
-          <h2>Technology stack</h2>
-          <p>Focused on full-stack web, mobile apps, database-backed systems and AI-assisted development workflows.</p>
-        </div>
+        <div class="section-heading reveal"><div><p class="eyebrow">02 / Expertise</p><h2>Tools I use to <span>build and ship.</span></h2></div><p>From database design to polished mobile screens, I work across the product stack.</p></div>
         <div class="skill-grid">
-          <article class="skill-card"><h3>Programming</h3><p>Java, Dart, Python, Kotlin, SQL, JavaScript, TypeScript, C, C++, R, HTML5, CSS3, XML</p></article>
-          <article class="skill-card"><h3>Backend</h3><p>Spring Boot, Spring, REST API, Servlet, JSP, JSF, Hibernate, JPA, Maven, Gradle, JasperReports</p></article>
-          <article class="skill-card"><h3>Frontend & Mobile</h3><p>Angular, Bootstrap, Android, Flutter, Material UI, Jetpack Compose, responsive web/mobile screens</p></article>
-          <article class="skill-card"><h3>Database & Data</h3><p>Oracle 19c, SQL, PL/SQL basics, SPSS, R, Excel analysis, reporting and visualization</p></article>
-          <article class="skill-card"><h3>Tools</h3><p>Git, GitHub, Postman, IntelliJ IDEA, Android Studio, VS Code, Eclipse, NetBeans, emulator/device testing</p></article>
-          <article class="skill-card highlight"><h3>AI-assisted Development</h3><p>Claude, Cursor Agent, Codex, Gemini, local AI agents, third-party APIs, prompt templates, code review, refactoring and documentation</p></article>
+          <article class="skill-card reveal"><b>01</b><h3>Backend Engineering</h3><p>Java, Spring Boot, Spring, REST APIs, JPA, Hibernate, Maven, JWT, WebSocket, JasperReports</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>REST</span></div></article>
+          <article class="skill-card reveal"><b>02</b><h3>Frontend & Mobile</h3><p>Angular, TypeScript, JavaScript, Bootstrap, Android, Kotlin, Flutter, Dart, Material UI, Jetpack Compose</p><div class="tags"><span>Angular</span><span>Android</span><span>Flutter</span></div></article>
+          <article class="skill-card reveal"><b>03</b><h3>Database & Data</h3><p>MySQL, Oracle 19c, SQL, PL/SQL, PostgreSQL, Firebase, SPSS, R, Excel analysis and visualization</p><div class="tags"><span>MySQL</span><span>Oracle</span><span>Firebase</span></div></article>
+          <article class="skill-card reveal"><b>04</b><h3>AI-Enhanced Workflow</h3><p>Claude, Cursor Agent, Codex, Gemini, local agents, prompt engineering, refactoring, test generation and documentation</p><div class="tags"><span>Codex</span><span>Claude</span><span>Gemini</span></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section-pad soft-bg" id="projects">
+    <section class="section journey" id="experience">
+      <div class="container journey-grid">
+        <div class="section-title reveal"><p class="eyebrow">03 / Journey</p><h2>Learning with <span>purpose.</span></h2><p class="muted">A foundation in data, strengthened through intensive software engineering training.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span>2026</span><div><small>Education</small><h3>MSc in Statistics</h3><p>University of Dhaka · Result not yet published</p></div></article>
+          <article class="timeline-item reveal"><span>788 hrs</span><div><small>Professional Training</small><h3>Web & Mobile App Development</h3><p>IsDB IT Scholarship Programme · Spring Boot, Android & Flutter · 10.5 months</p></div></article>
+          <article class="timeline-item reveal"><span>2025</span><div><small>Education</small><h3>BSc in Statistics</h3><p>University of Dhaka · CGPA 3.19 / 4.00</p></div></article>
+          <article class="timeline-item reveal"><span>2024</span><div><small>Academic Research</small><h3>Study Hours & Academic Performance</h3><p>Survey of 235 university students using correlation, t-test, ANOVA and regression.</p><a href="https://github.com/masud-rana-pro/research-paper" target="_blank" rel="noopener">View research ↗</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
       <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">Portfolio projects</span>
-          <h2>Selected work</h2>
-          <p>Projects showing web, backend, mobile, enterprise workflow and AI-assisted development capability.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-top"><span>Live Website</span><span>HTML/CSS/Bootstrap/JS</span></div>
-            <h3>BestCare Health - Healthcare Website</h3>
-            <p>Designed and published a responsive healthcare/service website with clean sections, public hosting and user-friendly presentation.</p>
-            <a href="https://masud-rana-pro.github.io/bestcare-health.github.io/" target="_blank" rel="noopener">View live project →</a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>Enterprise Project</span><span>Spring Boot + Angular</span></div>
-            <h3>Banking Management System</h3>
-            <p>Developed customer, account, transaction, statements, reports, role-based access and multi-module banking workflows using layered architecture.</p>
-            <a href="#contact">Request demo/details →</a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>Android App</span><span>Firebase + WebRTC</span></div>
-            <h3>ContactMe - Messaging & Calling App</h3>
-            <p>Built authentication, profile, realtime chat, media/document sharing, voice messaging, notifications and call signaling foundation.</p>
-            <a href="#contact">Request project details →</a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>Ongoing</span><span>Flutter + Dart</span></div>
-            <h3>Mobile Banking App - bKash-like Project</h3>
-            <p>Building a mobile banking style app with dashboard, transaction flow, send money/payment screens, reusable widgets and clean navigation.</p>
-            <a href="#contact">Follow progress →</a>
-          </article>
-
-          <article class="project-card wide">
-            <div class="project-top"><span>AI Portfolio</span><span>Claude • Cursor • Codex • Gemini</span></div>
-            <h3>AI-Assisted Java Developer Workflow & Coding Environment</h3>
-            <p>Prepared developer-focused setup and usage guides for AI coding environments, IDE integration, repository context, prompt templates, code review, refactoring, debugging, testing and documentation workflow.</p>
-            <a href="#contact">View presentation/demo info →</a>
-          </article>
+        <div class="section-heading light reveal"><div><p class="eyebrow">04 / Selected work</p><h2>Projects built to solve <span>real problems.</span></h2></div><p>Video buttons are ready for future demo links. Replace each placeholder URL when your videos are published.</p></div>
+        <div class="project-list">
+          <article class="project-card reveal"><div class="project-index">01</div><div class="project-body"><div class="project-meta"><span>Enterprise full stack</span><span>Featured</span></div><h3>Al-Barakah Shariah Bank PLC</h3><p>A comprehensive Shariah banking management system covering customers, accounts, transactions, statements, reports, role-based access and 22 interconnected modules.</p><div class="project-tech"><span>Spring Boot</span><span>Angular</span><span>MySQL</span><span>JWT</span><span>WebSocket</span></div><div class="project-actions"><span class="video-soon" title="Add video URL later">▶ Video coming soon</span><span class="private-link">GitHub link coming soon</span></div></div></article>
+          <article class="project-card reveal"><div class="project-index">02</div><div class="project-body"><div class="project-meta"><span>Android application</span></div><h3>ContactMe — Messaging & Calling</h3><p>Realtime communication app with authentication, profiles, media sharing, voice messages, notifications, permissions and WebRTC calling workflows.</p><div class="project-tech"><span>Android</span><span>Firebase</span><span>WebRTC</span><span>FCM</span><span>Cloudflare</span></div><div class="project-actions"><span class="video-soon">▶ Video coming soon</span><span class="private-link">GitHub link coming soon</span></div></div></article>
+          <article class="project-card reveal"><div class="project-index">03</div><div class="project-body"><div class="project-meta"><span>Cross-platform mobile</span></div><h3>SmartKash — Mobile Banking</h3><p>A modern mobile banking experience supporting add money, send money, cash out, payments, statements, savings, loans, recharge and bill pay.</p><div class="project-tech"><span>Flutter</span><span>Dart</span><span>Firebase</span><span>PostgreSQL</span></div><div class="project-actions"><span class="video-soon">▶ Video coming soon</span><a href="https://github.com/masud-rana-pro/mobile-banking-app" target="_blank" rel="noopener">View GitHub ↗</a></div></div></article>
+          <article class="project-card reveal"><div class="project-index">04</div><div class="project-body"><div class="project-meta"><span>Responsive web</span><span>Live</span></div><h3>BestCare Health</h3><p>A publicly deployed healthcare and service website with a clean information hierarchy, responsive layout and accessible presentation.</p><div class="project-tech"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span></div><div class="project-actions"><a href="https://masud-rana-pro.github.io/bestcare-health.github.io/" target="_blank" rel="noopener">View live site ↗</a></div></div></article>
+          <article class="project-card reveal"><div class="project-index">05</div><div class="project-body"><div class="project-meta"><span>Developer productivity</span></div><h3>AI-Assisted Developer Workflow</h3><p>A practical portfolio of AI coding environments, repository context, prompt templates, code review, debugging, testing and documentation workflows.</p><div class="project-tech"><span>Codex</span><span>Claude</span><span>Cursor</span><span>Gemini</span></div><div class="project-actions"><a href="https://github.com/masud-rana-pro/ai-documents" target="_blank" rel="noopener">View presentation ↗</a></div></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section-pad" id="research">
-      <div class="container two-col align-start">
-        <div>
-          <span class="section-kicker">Academic research</span>
-          <h2>Relationship Between Study Hours and Academic Performance Among University Students in Bangladesh</h2>
-          <p class="muted">Research Methodology Project • Department of Statistics, Dhaka College under University of Dhaka • Submitted: Oct 02, 2024</p>
-        </div>
-        <div class="content-card">
-          <ul class="clean-list">
-            <li>Conducted a quantitative, cross-sectional survey-based research project on undergraduate university students in Bangladesh.</li>
-            <li>Sample size: 235 respondents.</li>
-            <li>Applied descriptive statistics, Pearson correlation, independent samples t-test, ANOVA and multiple regression.</li>
-            <li>Used Excel/SPSS/R/Python-style analytical workflow for statistical interpretation and reporting.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad soft-bg" id="training">
-      <div class="container two-col align-start">
-        <div>
-          <span class="section-kicker">Professional training</span>
-          <h2>Web and Mobile App Development using Spring Boot, Android & Flutter</h2>
-          <p class="muted">IsDB-BISEW IT Scholarship Programme • Trainee ID: 1292522 • Batch: JEE/CGNT-A/68/01 • 788 hours</p>
-        </div>
-        <div class="content-card">
-          <p>Modules covered: Web Publishing & Bootstrap, Oracle 19c Database, Java OOP, XML, OO System Analysis & UML, Servlet, JSP, JSF, Hibernate, Angular, Spring, Spring Boot, JasperReports, Android and Flutter.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad" id="certifications">
+    <section class="section credentials" id="certifications">
       <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">Certifications</span>
-          <h2>Selected certifications</h2>
-        </div>
-        <div class="cert-layout">
-          <div class="cert-box">
-            <h3>Microsoft / Vendor</h3>
-            <ul class="clean-list compact">
-              <li>AZ-204 - Developing Solutions for Microsoft Azure</li>
-              <li>PL-400 - Microsoft Power Platform Developer</li>
-              <li>DP-600 - Implementing Analytics Solutions Using Microsoft Fabric</li>
-              <li>AI-900 - Microsoft Azure AI Fundamentals</li>
-            </ul>
-          </div>
-          <div class="cert-box">
-            <h3>Coursera</h3>
-            <ul class="clean-list compact">
-              <li>Google Data Analytics Professional Certificate</li>
-              <li>IBM Data Science Fundamentals with Python and SQL</li>
-              <li>Learn SQL Basics for Data Science - UC Davis</li>
-              <li>Big Data Specialization - UC San Diego</li>
-              <li>Data Visualization with Tableau - UC Davis</li>
-              <li>Data Analysis and Presentation Skills - PwC</li>
-            </ul>
-          </div>
+        <div class="section-heading reveal"><div><p class="eyebrow">05 / Credentials</p><h2>Continuous learning, <span>verified.</span></h2></div><p>Industry credentials across cloud development, AI, analytics and data science.</p></div>
+        <div class="credential-grid">
+          <a class="credential reveal" href="https://learn.microsoft.com/api/credentials/share/en-us/masudrana-3397/7B7A66D65D3193CE?sharingId=D96AA0E6CD059D1C" target="_blank" rel="noopener"><span>Microsoft</span><h3>AZ-204</h3><p>Developing Solutions for Microsoft Azure</p><b>Verify ↗</b></a>
+          <a class="credential reveal" href="https://learn.microsoft.com/api/credentials/share/en-us/masud-data/88E384566ADD867D?sharingId=DCA9157B184FA22D" target="_blank" rel="noopener"><span>Microsoft</span><h3>PL-400</h3><p>Power Platform Developer</p><b>Verify ↗</b></a>
+          <a class="credential reveal" href="https://learn.microsoft.com/api/credentials/share/en-us/MDMASUDRANA-9404/F7D71D0EE0C2B520?sharingId=C065E6C664ABC730" target="_blank" rel="noopener"><span>Microsoft</span><h3>DP-600</h3><p>Microsoft Fabric Analytics Solutions</p><b>Verify ↗</b></a>
+          <a class="credential reveal" href="https://learn.microsoft.com/api/credentials/share/en-us/masudrana-2663/61FE3789DC16BB72?sharingId=2D909BA68FE79B7E" target="_blank" rel="noopener"><span>Microsoft</span><h3>AI-900</h3><p>Azure AI Fundamentals</p><b>Verify ↗</b></a>
+          <a class="credential reveal" href="https://coursera.org/share/a5fdefb40c048b306c724e0966ea6776" target="_blank" rel="noopener"><span>Google</span><h3>Data Analytics</h3><p>Professional Certificate</p><b>Verify ↗</b></a>
+          <a class="credential reveal" href="https://coursera.org/share/dc8020f143b53dbb6bd8064ff20557ad" target="_blank" rel="noopener"><span>IBM</span><h3>Data Science</h3><p>Python & SQL Specialization</p><b>Verify ↗</b></a>
         </div>
       </div>
     </section>
 
-    <section class="section-pad dark-section" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <span class="section-kicker light">Contact</span>
-          <h2>Let’s build something useful.</h2>
-          <p>I am open to junior software developer, Java/Spring Boot, Android, Flutter and trainee developer opportunities.</p>
-        </div>
-        <div class="contact-card">
-          <a href="mailto:masudrana.mwp@gmail.com">masudrana.mwp@gmail.com</a>
-          <a href="tel:+8801575634380">+8801575634380</a>
-          <a href="assets/cv/Md_Masud_Rana_CV.docx" download>Download CV</a>
-          <a href="https://masud-rana-pro.github.io/bestcare-health.github.io/" target="_blank" rel="noopener">BestCare Health Website</a>
-        </div>
+    <section class="contact" id="contact">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">06 / Contact</p>
+        <h2>Have a project or an opportunity? <span>Let’s talk.</span></h2>
+        <p>I’m currently open to junior full stack, Java/Spring Boot, Android and Flutter developer roles.</p>
+        <a class="email-link" href="mailto:masudrana.mwp@gmail.com">masudrana.mwp@gmail.com <b>↗</b></a>
+        <div class="contact-details"><a href="tel:+8801575634380">+880 1575634380</a><span>Rupnagar R/A, Mirpur-2, Dhaka</span></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Md. Masud Rana</span>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
-
+  <footer class="footer"><div class="container footer-inner"><div><a class="brand footer-brand" href="#top"><span>MR</span><strong>Masud Rana</strong></a><p>Building thoughtful software with code, data and curiosity.</p></div><div class="footer-links"><a href="https://github.com/masud-rana-pro" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/masudmwp" target="_blank" rel="noopener">LinkedIn</a><a href="assets/cv/Md_Masud_Rana_CV_Updated_Final.docx" download>Download CV</a></div></div><div class="container copyright"><span>© <span id="year"></span> Md. Masud Rana</span><a href="#top">Back to top ↑</a></div></footer>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
-<!-- redeploy -->
