@@ -1,45 +1,67 @@
-const header = document.querySelector('.site-header');
-const toggle = document.querySelector('.nav-toggle');
-const menu = document.querySelector('.nav-links');
-const navItems = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+const header = document.querySelector('header');
+const menuButton = document.querySelector('.menu');
+const navLinks = document.querySelector('.links');
+const anchorLinks = [...document.querySelectorAll('.links a')];
 
-const closeMenu = () => {
-  menu?.classList.remove('open');
-  toggle?.setAttribute('aria-expanded', 'false');
-};
+function closeMenu() {
+  navLinks?.classList.remove('open');
+  menuButton?.setAttribute('aria-expanded', 'false');
+}
 
-toggle?.addEventListener('click', () => {
-  const open = menu.classList.toggle('open');
-  toggle.setAttribute('aria-expanded', String(open));
+menuButton?.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
 });
+anchorLinks.forEach(link => link.addEventListener('click', closeMenu));
+document.addEventListener('keydown', event => event.key === 'Escape' && closeMenu());
 
-navItems.forEach((item) => item.addEventListener('click', closeMenu));
-document.addEventListener('keydown', (event) => event.key === 'Escape' && closeMenu());
+function onScroll() { header?.classList.toggle('scrolled', scrollY > 24); }
+onScroll();
+addEventListener('scroll', onScroll, { passive: true });
 
-const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 24);
-updateHeader();
-window.addEventListener('scroll', updateHeader, { passive: true });
-
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+      entry.target.classList.add('show');
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach((element, index) => {
-  element.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
-  revealObserver.observe(element);
+}, { threshold: .1 });
+document.querySelectorAll('.reveal').forEach((el, index) => {
+  el.style.transitionDelay = `${Math.min(index % 3, 2) * 70}ms`;
+  revealObserver.observe(el);
 });
 
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
     if (!entry.isIntersecting) return;
-    navItems.forEach((link) => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+    anchorLinks.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
   });
-}, { rootMargin: '-35% 0px -55%', threshold: 0 });
+}, { rootMargin: '-40% 0px -52%' });
+document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
 
-document.querySelectorAll('main section[id]').forEach((section) => sectionObserver.observe(section));
+const roles = ['Full Stack Developer', 'Spring Boot Developer', 'Android Developer', 'Flutter Developer'];
+const typed = document.getElementById('typed');
+let roleIndex = 0;
+let charIndex = roles[0].length;
+let deleting = true;
+function typeRole() {
+  if (!typed) return;
+  const role = roles[roleIndex];
+  charIndex += deleting ? -1 : 1;
+  typed.textContent = role.slice(0, charIndex);
+  if (deleting && charIndex === 0) {
+    deleting = false;
+    roleIndex = (roleIndex + 1) % roles.length;
+    setTimeout(typeRole, 350);
+    return;
+  }
+  if (!deleting && charIndex === roles[roleIndex].length) {
+    deleting = true;
+    setTimeout(typeRole, 1800);
+    return;
+  }
+  setTimeout(typeRole, deleting ? 38 : 75);
+}
+setTimeout(typeRole, 1800);
 document.getElementById('year').textContent = new Date().getFullYear();
