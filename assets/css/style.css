@@ -48,3 +48,10 @@
 .footer-light .footer-contact{padding:25px;background:linear-gradient(145deg,#d5e1d9,#c3d5ca);border-color:#9fb8aa;box-shadow:0 14px 32px rgba(28,65,49,.09)}.footer-light .contact-kicker{font-size:.58rem}.footer-light .footer-contact h3{font-size:1.12rem}.footer-light .footer-contact>a{font-size:.71rem;border-color:#aabfb2}.footer-light .footer-contact>a small{font-size:.56rem}.footer-light .footer-contact>p{font-size:.67rem}
 .site-footer.footer-light .copyright{margin-top:38px;padding-top:18px;border-color:#9fb3a7;color:#4e6559;font-size:.67rem}
 @media(max-width:700px){.site-footer.footer-light{padding-top:52px}.footer-light .footer-grid{gap:32px 24px}.site-footer.footer-light .copyright{margin-top:32px}}
+
+/* Final dark blue footer palette. */
+.site-footer.footer-light{color:#eaf1f5;background:radial-gradient(circle at 8% 18%,rgba(35,166,128,.13),transparent 28%),radial-gradient(circle at 92% 85%,rgba(222,151,51,.10),transparent 29%),linear-gradient(145deg,#17283a 0%,#111d2b 58%,#182333 100%)}
+.footer-light .footer-logo{color:#f1f6f8}.footer-light .footer-role{color:#9fb1bf}.footer-light .footer-identity>p{color:#b1c0ca}.footer-light .footer-social a{border-color:#3a5063;background:#203447;color:#60d6aa;box-shadow:0 5px 16px rgba(2,10,18,.2)}
+.site-footer.footer-light .footer-column h4{color:#f1f6f8}.site-footer.footer-light .footer-column:not(.connect-column)>a,.site-footer.footer-light .footer-column>a{color:#aebec9}.site-footer.footer-light .footer-column:not(.connect-column)>a{border-color:#304557}.site-footer.footer-light .footer-column>a:hover{color:#63d9ad}.footer-light .footer-link-icon{border-color:#38566a;background:#20394a;color:#63d9ad!important}
+.footer-light .footer-contact{background:linear-gradient(145deg,#20394d,#192d40);border-color:#3b566a;box-shadow:0 16px 36px rgba(1,8,16,.24)}.footer-light .footer-contact h3{color:#f2f6f8}.footer-light .footer-contact>a{color:#d5e0e6;border-color:#365064}.footer-light .footer-contact>a i{background:#294459;color:#63d9ad}.footer-light .footer-contact>a small,.footer-light .footer-contact>p{color:#91a7b6}
+.site-footer.footer-light .copyright{border-color:#304557;color:#8fa4b2}
