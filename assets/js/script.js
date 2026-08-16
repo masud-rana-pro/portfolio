@@ -70,7 +70,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 document.querySelectorAll('.yt-embed').forEach(el => {
   function activate() {
     const id = el.dataset.videoid;
-    el.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0" title="YouTube video player" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="YouTube video player" allow="autoplay; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
   }
   el.addEventListener('click', activate);
   el.addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && activate());
