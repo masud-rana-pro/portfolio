@@ -40,7 +40,7 @@ const sectionObserver = new IntersectionObserver(entries => {
 }, { rootMargin: '-40% 0px -52%' });
 document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
 
-const roles = ['Full Stack Developer', 'Spring Boot Developer', 'Android Developer', 'Flutter Developer'];
+const roles = ['Full Stack Developer', 'JAVA Developer', 'Spring Boot Developer', 'Android Developer', 'Flutter Developer', 'Cross Platform App Developer'];
 const typed = document.getElementById('typed');
 let roleIndex = 0;
 let charIndex = roles[0].length;
@@ -65,3 +65,13 @@ function typeRole() {
 }
 setTimeout(typeRole, 1800);
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// YouTube click-to-play embed
+document.querySelectorAll('.yt-embed').forEach(el => {
+  function activate() {
+    const id = el.dataset.videoid;
+    el.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0" title="YouTube video player" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  }
+  el.addEventListener('click', activate);
+  el.addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && activate());
+});
