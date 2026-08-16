@@ -75,3 +75,12 @@ document.querySelectorAll('.yt-embed').forEach(el => {
   el.addEventListener('click', activate);
   el.addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && activate());
 });
+
+// Back-to-top button smooth scrolling
+document.querySelectorAll('a[href="#top"], .footer-top').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
