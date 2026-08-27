@@ -84,3 +84,77 @@ document.querySelectorAll('a[href="#top"], .footer-top').forEach(btn => {
   });
 });
 
+// ── Presentation Slideshow ──
+(function () {
+  const total = 24;
+  const track = document.getElementById('presTrack');
+  const dotsContainer = document.getElementById('presDots');
+  const prevBtn = document.querySelector('.pres-prev');
+  const nextBtn = document.querySelector('.pres-next');
+  if (!track || !dotsContainer) return;
+
+  let current = 0;
+  let autoTimer = null;
+  let direction = 1; // 1 = LTR (right), -1 = RTL (left)
+
+  // Build dots
+  const dots = Array.from({ length: total }, (_, i) => {
+    const dot = document.createElement('span');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+    return dot;
+  });
+
+  function updateDots(idx) {
+    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+  }
+
+  function goTo(idx, skipAutoReset) {
+    current = (idx + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    updateDots(current);
+    if (!skipAutoReset) resetAuto();
+  }
+
+  function nextSlide() {
+    if (current >= total - 1) direction = -1;
+    if (current <= 0) direction = 1;
+    goTo(current + direction, true);
+  }
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(nextSlide, 3200);
+  }
+
+  prevBtn?.addEventListener('click', () => {
+    direction = -1;
+    goTo(current - 1);
+  });
+  nextBtn?.addEventListener('click', () => {
+    direction = 1;
+    goTo(current + 1);
+  });
+
+  // Touch/swipe support
+  let touchStartX = 0;
+  const slideshow = document.getElementById('presSlideshow');
+  slideshow?.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  slideshow?.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 40) { dx < 0 ? goTo(current + 1) : goTo(current - 1); }
+  }, { passive: true });
+
+  // Pause on hover
+  slideshow?.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  slideshow?.addEventListener('mouseleave', resetAuto);
+
+  // Keyboard accessibility
+  slideshow?.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+
+  resetAuto();
+})();
