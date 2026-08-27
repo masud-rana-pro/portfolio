@@ -45,6 +45,7 @@ I uniquely leverage my strong academic foundation in statistics to engineer scal
 | **Mobile** | Android (Kotlin) · Flutter (Dart) · Jetpack Compose · FCM · Material Design |
 | **Database** | Oracle 19c · PostgreSQL · MySQL · Cloud Firestore · Firebase |
 | **DevOps & Tools** | Git & GitHub · Postman · IntelliJ IDEA · Android Studio · VS Code · Gradle / Maven |
+| **Productivity** | MS Word · MS Excel · MS PowerPoint · Google Workspace |
 | **AI & Agentic** | Claude Code · Cursor Agent · Codex · Gemini · MCP · Local AI Agents · Prompt Engineering |
 
 ---
