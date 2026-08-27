@@ -1,0 +1,13 @@
+# Backup copies — do not push to GitHub
+README - Copy.md
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Editor directories
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
