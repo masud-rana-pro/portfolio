@@ -98,7 +98,7 @@
 .yt-embed:hover img{transform:scale(1.04);opacity:.88}
 .yt-play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:68px;display:grid;place-items:center;border-radius:50%;background:rgba(255,0,0,.88);color:#fff;font-size:1.55rem;box-shadow:0 4px 22px rgba(0,0,0,.5);transition:transform .25s,background .25s;pointer-events:none;padding-left:4px}
 .yt-embed:hover .yt-play-btn{transform:translate(-50%,-50%) scale(1.12);background:#ff0000}
-.yt-embed iframe{width:100%;aspect-ratio:16/9;border:none;display:block;border-radius:0 0 12px 12px}
+.yt-embed iframe, .yt-embed video{width:100%;aspect-ratio:16/9;border:none;display:block;border-radius:0 0 12px 12px}
 .window-straight{transform:none;box-shadow:0 16px 40px rgba(0,0,0,.35);max-width:100%}
 .project-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;aspect-ratio:16/9;background:radial-gradient(circle at center,rgba(52,210,123,.08),transparent 70%),#0a0d19;border-radius:0 0 12px 12px;gap:10px}
 .project-placeholder span{font-size:2.2rem;opacity:.8}
